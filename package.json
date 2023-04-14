@@ -1,0 +1,11 @@
+{
+  "name": "ocprojet4",
+  "version": "1.0.0",
+  "description": "Projet4 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "AdrienBlanco",
+  "license": "ISC"
+}
