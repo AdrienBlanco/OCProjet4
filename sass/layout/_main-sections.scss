@@ -1,0 +1,24 @@
+form {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-form-background;
+    color: $color-dark;
+    input {
+        height: 50px;
+        background-color: $color-form-background;
+        color: $color-dark;
+        border: none;
+        text-align: center;
+        @include roboto-font (500);
+    }
+}
+
+section {
+    padding: 0 20px;
+    &.index-fonctionnement {
+        background-color: white;
+    }
+}

@@ -1,4 +1,10 @@
-// variables //
-$color-primary: #9356DC ;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/extensions";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/components";
+@import "./layout/container";
+@import "./layout/header";
+@import "./layout/main-sections";
+@import "./layout/footer";

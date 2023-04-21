@@ -1,0 +1,19 @@
+a, ul {
+    @include neutral-style;
+}
+
+main {
+    @include roboto-font;
+}
+
+.section-title {
+    margin: 25px 0;
+}
+
+footer {
+    @include roboto-font (400);
+    h3 { 
+        @include shrikand-font;
+    }
+}
+

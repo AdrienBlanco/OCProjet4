@@ -1,0 +1,18 @@
+@mixin roboto-font ($f-weight: 300, $f-size: 16px){
+    font-family: 'Roboto', sans-serif;
+    font-weight: $f-weight;
+    font-size: $f-size;
+}
+
+@mixin shrikand-font {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+}
+
+@mixin neutral-style {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
