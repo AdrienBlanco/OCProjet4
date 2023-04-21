@@ -28,7 +28,6 @@
             margin: 15px;
             display: flex;
             flex-direction: column;
-            gap: 5px;
         }
         i {
             font-size: large;
@@ -46,7 +45,7 @@
         color: white;
         box-shadow: $shadow-strong;
         border-radius: 25px;
-        height: 50px;
         padding: 13px 16px;
+        width: 180px;
     }
 }

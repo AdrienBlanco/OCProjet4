@@ -18,6 +18,11 @@ form {
 
 section {
     padding: 0 20px;
+    &.index-booking {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
     &.index-fonctionnement {
         background-color: white;
     }
