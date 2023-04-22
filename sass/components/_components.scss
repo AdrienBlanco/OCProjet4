@@ -15,7 +15,7 @@
         right: 15px;
         background-color: $color-tertiary;
         color: $color-tertiary-font;
-        font-weight: 500px;
+        @include roboto-font (500, 14px);
         padding: 9px;
         border-radius: 2px;
         box-shadow: $shadow-primary;
