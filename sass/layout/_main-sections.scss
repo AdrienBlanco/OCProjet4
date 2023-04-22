@@ -4,27 +4,27 @@
     background-color: $color-background;
     padding-bottom: 20px;
     @include direction;
+    form {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        @include center;
+        background-color: $color-form-background;
+        color: $color-dark;
+        input {
+            height: 50px;
+            background-color: $color-form-background;
+            color: $color-dark;
+            border: none;
+            text-align: center;
+            @include roboto-font (500);
+        }
+    }
     &__content {
         padding: $section-padding;
         @include direction;
         gap: 20px;
         margin: 20px 0;
-    }
-}
-form {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    @include center;
-    background-color: $color-form-background;
-    color: $color-dark;
-    input {
-        height: 50px;
-        background-color: $color-form-background;
-        color: $color-dark;
-        border: none;
-        text-align: center;
-        @include roboto-font (500);
     }
 }
 
