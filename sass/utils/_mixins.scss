@@ -4,9 +4,10 @@
     font-size: $f-size;
 }
 
-@mixin shrikand-font {
+@mixin shrikand-font ($f-weight: 400, $f-size: 18px){
     font-family: 'Shrikhand', sans-serif;
-    font-weight: 400;
+    font-weight: $f-weight;
+    font-size: $f-size;
 }
 
 @mixin neutral-style {
@@ -16,3 +17,12 @@
     margin: 0;
 }
 
+@mixin direction ($direction: column) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}

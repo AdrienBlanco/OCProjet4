@@ -2,7 +2,7 @@
     background-color: white;
     position: relative;
     border-radius: 20px;
-    filter: drop-shadow($shadow-strong);
+    filter: drop-shadow($shadow-card);
     img {
         object-fit: cover;
         width: 100%;
@@ -18,7 +18,7 @@
         font-weight: 500px;
         padding: 9px;
         border-radius: 2px;
-        box-shadow: $shadow-light;
+        box-shadow: $shadow-primary;
     }
     &__content {
         display: flex;
@@ -26,11 +26,11 @@
         align-items: center;
         &--txt-layout {
             margin: 15px;
-            display: flex;
-            flex-direction: column;
+            @include direction;
+            gap: 5px;
         }
         i {
-            font-size: large;
+            font-size: 22px;
             margin: 25px;
         }
     }
@@ -38,14 +38,13 @@
 
 .btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     &--pink {
         background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
         color: white;
-        box-shadow: $shadow-strong;
+        box-shadow: $shadow-btn-origin;
         border-radius: 25px;
         padding: 13px 16px;
-        width: 180px;
+        width: 186px;
     }
 }

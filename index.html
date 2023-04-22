@@ -18,30 +18,25 @@
             <img src="./public/img/logo/ohmyfood.png" alt="logo Ohmyfood">
         </header>
         <main>
-            <aside class="search"><form><i class="fa-solid fa-location-dot" aria-hidden="true"></i><input type=search value="Paris, Belleville"></form></aside>
             <section class="index-booking">
-                <div class="direction-column">
-                    <h1 class="section-title">Réservez le menu qui vous convient</h1>
-                    <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                    <div class="btn"><a class="btn--pink" href="">Explorer nos restaurants</a></div>
-                </div>
+                    <form><i class="fa-solid fa-location-dot" aria-hidden="true"></i><input type=search value="Paris, Belleville"></form>
+                    <div class="index-booking__content">
+                        <h1>Réservez le menu qui vous convient</h1>
+                        <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+                        <p class="btn"><a class="btn--pink" href="">Explorer nos restaurants</a></p>
+                    </div>    
             </section>
             <section class="index-fonctionnement">
-                <div class="direction-column">
-                    <h2 class="section-title">Fonctionnement</h2>
-                    <div class="index-fonctionnement__buttons">
-                        <div class="btn">Choisissez un restaurant</div>
-                            <div class="btn__number">1</div>
-                        <div class="btn">Composez votre menu</div>
-                            <div class="btn__number">2</div>
-                        <div class="btn">Dégustez au restaurant</div>
-                            <div class="btn__number">3</div>
-                    </div>        
-                </div>    
+                    <h2>Fonctionnement</h2>
+                    <div class="index-fonctionnement__btns">
+                        <div class="btn index-fonctionnement__btns--layout"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>Choisissez un restaurant<div class="btn-number">1</div></div>
+                        <div class="btn index-fonctionnement__btns--layout"><i class="fa-solid fa-list-ul" aria-hidden="true"></i>Composez votre menu<div class="btn-number">2</div></div>  
+                        <div class="btn index-fonctionnement__btns--layout"><i class="fa-solid fa-store" aria-hidden="true"></i>Dégustez au restaurant<div class="btn-number">3</div></div>  
+                    </div>          
             </section>
-            <section class="index-restaurants-section">
+            <section class="index-restaurants">
                 <h2 class="section-title">Restaurants</h2>
-                <div class="index-restaurants-section__cards">
+                <div class="index-restaurants__cards">
                     <article class="card">
                         <img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat">
                         <div class="card__btn-new">Nouveau</div>
@@ -88,15 +83,13 @@
             </section>
         </main>
         <footer>
-            <div class="footer-content">
-                <h3 class="footer-content__logo">ohmyfood</h3>
-                <ul class="footer-content__list">
+                <h3>ohmyfood</h3>
+                <ul>
                     <li><i class="fa-solid fa-utensils" aria-hidden="true"></i><a href="">Proposer un restaurant</a></li>
                     <li><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i><a href="">Devenir partenaire</a></li>
                     <li><a href="">Mentions légales</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-            </div>
         </footer>
     </div>
 </body>

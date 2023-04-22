@@ -1,0 +1,18 @@
+footer {
+    background-color: $color-dark;
+    color: white;
+    padding: 22px 25px;
+    @include direction;
+    gap: 15px;
+    a {
+        color: white;
+    }
+    ul {
+        @include direction;
+        gap: 7px;
+    }
+    i {
+        padding-right: 12px;
+        width: 11px;
+    }
+}

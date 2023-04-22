@@ -5,6 +5,7 @@ header {
     height: 63px;
     background-color: white;
     box-sizing: border-box;
+    filter: drop-shadow($shadow-primary);
     img {
         height: auto;
         width: 162px;

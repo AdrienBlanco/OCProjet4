@@ -5,6 +5,11 @@ $color-tertiary-font:#008766;
 $color-background: #f7f7f7;
 $color-form-background: #EAEAEA;
 $color-dark: #353535;
+$color-dark-font: #7E7E7E;
 
-$shadow-light: 0px 2px 4px rgba(0, 0, 0, 0.15);
-$shadow-strong: 0px 4px 15px rgba(0, 0, 0, 0.1);
+$shadow-primary: 0px 2px 4px rgba(0, 0, 0, 0.15);
+$shadow-btn-origin: 0px 4px 10px rgba(0, 0, 0, 0.25);
+$shadow-btn-modifier: 0px 4px 15px rgba(0, 0, 0, 0.35);
+$shadow-card: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+$section-padding: 20px;

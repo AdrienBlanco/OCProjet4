@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+a, ul {
+    @include neutral-style;
+}
+
+h2 {
+    margin: 25px 0;
+}

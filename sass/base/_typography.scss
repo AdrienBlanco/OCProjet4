@@ -1,13 +1,5 @@
-a, ul {
-    @include neutral-style;
-}
-
 main {
     @include roboto-font;
-}
-
-.section-title {
-    margin: 25px 0;
 }
 
 footer {
