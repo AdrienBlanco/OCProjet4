@@ -95,30 +95,3 @@
     }
 }
 
-.heart__icons {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    margin: 25px;
-    &--empty{
-        position: absolute;
-    }
-    &--full{
-        position: absolute;
-        opacity: 0;
-        background: linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: all 600ms;
-        animation-name: test;
-    }
-    &:active &--full{
-        opacity: 1;
-    }
-    &:active &--empty{
-        opacity: 0;
-    }
-}

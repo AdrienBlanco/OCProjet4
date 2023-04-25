@@ -15,6 +15,9 @@
     box-sizing: border-box;
     position: relative;
     top: -40px;
+    @include desktop {
+        max-width: 1055px;
+    }
     &__title {
         padding: 4px;
         display: flex;

@@ -4,14 +4,23 @@ footer {
     padding: 22px 25px;
     @include direction;
     gap: 15px;
-    z-index: 1;
-    
+    @include desktop {
+        height: 114px;
+        @include direction (row-reverse);
+        align-items: flex-end;
+        padding: 30px 70px;
+        gap: 70px;
+    }
     a {
         color: white;
     }
     ul {
         @include direction;
         gap: 7px;
+        @include desktop {
+            @include direction (row);
+            gap: 20px;
+        }
     }
     i {
         padding-right: 12px;

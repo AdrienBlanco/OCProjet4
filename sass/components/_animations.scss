@@ -1,0 +1,27 @@
+.heart__icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin: 25px;
+    &--empty{
+        position: absolute;
+    }
+    &--full{
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &:active &--full{
+        opacity: 1;
+        animation: pulse 300ms ease-in-out 100ms;
+
+    }
+    &:active &--empty{
+        opacity: 0;
+    }
+}
