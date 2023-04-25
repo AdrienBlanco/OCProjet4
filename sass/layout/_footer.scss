@@ -4,6 +4,8 @@ footer {
     padding: 22px 25px;
     @include direction;
     gap: 15px;
+    z-index: 1;
+    
     a {
         color: white;
     }

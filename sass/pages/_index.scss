@@ -17,7 +17,8 @@
             color: $color-dark;
             border: none;
             text-align: center;
-            @include roboto-font (500);
+            @include font (bold);
+            font-family: 'Roboto', sans-serif;
         }
     }
     &__content {
@@ -41,7 +42,7 @@
             background-color: $color-background;
             height: 72px;
             margin-left: 12px;
-            @include roboto-font (bold);
+            @include font (bold);
             i {
                 color: $color-dark-font;
                 position: absolute;
@@ -58,7 +59,7 @@
             width: 24px;
             height: 24px;
             border-radius: 100%;
-            @include roboto-font (500, 14px);
+            @include font (500, 14px);
         }
     }
 }

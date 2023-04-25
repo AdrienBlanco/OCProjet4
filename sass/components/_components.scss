@@ -1,7 +1,30 @@
+.btn {
+    display: flex;
+    @include center;
+    &--pink {
+        background: linear-gradient($color-gradient);
+        color: white;
+        text-align: center;
+        border-radius: 25px;
+        padding: 13px 18px;
+        min-width: 150px;
+        filter: drop-shadow($shadow-btn-origin);
+        transition: filter 400ms ease-in-out 100ms;
+        &:hover {
+            filter: drop-shadow($shadow-btn-modifier) brightness(1.10) saturate(0.85);
+        }
+    }
+    &--margin {
+        margin-top: 25px;
+        padding-bottom: 40px;
+    }
+}
+
 .card {
-    background-color: white;
     position: relative;
+    background-color: white;
     border-radius: 20px;
+    overflow: hidden;
     filter: drop-shadow($shadow-card);
     img {
         object-fit: cover;
@@ -9,13 +32,13 @@
         height: 174px;
         border-radius: 20px 20px 0 0;
     }
-    &__btn-new {
+    &__new {
         position: absolute;
         top: 15px;
         right: 15px;
         background-color: $color-tertiary;
         color: $color-tertiary-font;
-        @include roboto-font (500, 14px);
+        @include font (500, 14px);
         padding: 9px;
         border-radius: 2px;
         box-shadow: $shadow-primary;
@@ -29,22 +52,73 @@
             @include direction;
             gap: 5px;
         }
-        i {
-            font-size: 22px;
-            margin: 25px;
+    }
+    &__second-line {
+        display: flex;
+        justify-content: space-between;
+        p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
+        .price {
+            @include font (700, 15px);
+            color: $color-dark;
+            min-width: 27px;
+            padding-left: 5px;
+        }
+    }
+    &--layout {
+        height: 69px;
+        width: 100%;
+        @include direction;
+        justify-content: center;
+        padding: 0 15px;
+        gap: 5px;
+        overflow: hidden;
+    }
+    &__check {
+        width: 59px;
+        display: flex;
+        @include center;
+        margin-right: -59px;
+        background-color: $color-tertiary;
+        color: white;
+        transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        i {
+            font-size: 20px;
+        }
+    }
+    &:active &__check {
+        margin-right: 0;
+
     }
 }
 
-.btn {
+.heart__icons {
+    position: relative;
     display: flex;
-    @include center;
-    &--pink {
-        background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
-        color: white;
-        box-shadow: $shadow-btn-origin;
-        border-radius: 25px;
-        padding: 13px 16px;
-        width: 186px;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin: 25px;
+    &--empty{
+        position: absolute;
+    }
+    &--full{
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 600ms;
+        animation-name: test;
+    }
+    &:active &--full{
+        opacity: 1;
+    }
+    &:active &--empty{
+        opacity: 0;
     }
 }

@@ -2,10 +2,19 @@
     margin: 0;
 }
 
-a, ul {
+ul {
     @include neutral-style;
+}
+
+a {
+    @include neutral-style;
+    color: black;
 }
 
 h2 {
     margin: 25px 0;
+}
+
+.flex {
+    display: flex;
 }

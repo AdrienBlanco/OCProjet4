@@ -1,11 +1,12 @@
-main {
-    @include roboto-font;
+body {
+    font-family: 'Roboto', sans-serif;
+    @include font;
 }
 
 footer {
-    @include roboto-font (400);
+    @include font (400);
     h3 { 
-        @include shrikand-font;
+        font-family: 'Shrikhand', sans-serif;
+        @include font (400, 18px);
     }
 }
-
