@@ -48,6 +48,9 @@
     &--bg {
         padding: $section-padding;
         margin-bottom: 25px;
+        @include desktop {
+            padding: 25px 20px;
+        }
     }
     &__btns {
         @include direction;
@@ -55,6 +58,7 @@
         @include desktop {
             @include direction (row);
             justify-content: space-between;
+            max-width: 99%;
         }
         &--layout {
             position: relative;
@@ -100,10 +104,25 @@
     &--bg {
         background-color: $color-background;
         padding: $section-padding;
+        @include desktop {
+            padding: 10px 20px;
+        }
     }
     &__cards {
         @include direction;
         gap: 15px;
         padding-bottom: 45px;
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 55px;
+            padding: 10px 0 20px 0;
+        }
+        & > .card {
+            @include desktop {
+            min-width: 45%;
+            }
+        }
     }
 }

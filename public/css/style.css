@@ -319,6 +319,11 @@ footer i {
   padding: 20px;
   margin-bottom: 25px;
 }
+@media screen and (min-width: 1024px) {
+  .index-fonctionnement--bg {
+    padding: 25px 20px;
+  }
+}
 .index-fonctionnement__btns {
   display: flex;
   flex-direction: column;
@@ -329,6 +334,7 @@ footer i {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 99%;
   }
 }
 .index-fonctionnement__btns--layout {
@@ -380,11 +386,30 @@ footer i {
   background-color: #f7f7f7;
   padding: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .index-restaurants--bg {
+    padding: 10px 20px;
+  }
+}
 .index-restaurants__cards {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-bottom: 45px;
+}
+@media screen and (min-width: 1024px) {
+  .index-restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 55px;
+    padding: 10px 0 20px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .index-restaurants__cards > .card {
+    min-width: 45%;
+  }
 }
 
 .menu-main {
