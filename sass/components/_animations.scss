@@ -16,12 +16,12 @@
         -webkit-background-clip: text;
         color: transparent;
     }
-    &:active &--full{
+    &:hover &--full{
         opacity: 1;
         animation: pulse 300ms ease-in-out 100ms;
 
     }
-    &:active &--empty{
+    &:hover &--empty{
         opacity: 0;
     }
 }

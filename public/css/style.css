@@ -150,7 +150,7 @@ footer h3 {
 .card__check i {
   font-size: 20px;
 }
-.card:active .card__check {
+.card:hover .card__check {
   margin-right: 0;
 }
 
@@ -173,11 +173,11 @@ footer h3 {
   -webkit-background-clip: text;
   color: transparent;
 }
-.heart__icons:active .heart__icons--full {
+.heart__icons:hover .heart__icons--full {
   opacity: 1;
   animation: pulse 300ms ease-in-out 100ms;
 }
-.heart__icons:active .heart__icons--empty {
+.heart__icons:hover .heart__icons--empty {
   opacity: 0;
 }
 
