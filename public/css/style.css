@@ -84,7 +84,7 @@
     transform: scaleX(3);
   }
   100% {
-    transform: scaleX(40px);
+    transform: scaleX(1);
   }
 }
 @keyframes menus {
