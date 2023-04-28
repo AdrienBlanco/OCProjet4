@@ -24,6 +24,7 @@
         display: flex;
         align-items: center;
         gap: 24px;
+        animation: title 900ms cubic-bezier(0.63,-0.36, 0.46, 1.49);
         h1 {
             font-family: 'Shrikhand', sans-serif;
             @include font (400, 28px);

@@ -14,6 +14,20 @@
 
 //animation loader
 
+@keyframes load {
+  0% {
+		opacity: 1;
+    z-index: 1;
+	}
+  99% {
+		opacity: 1;
+    z-index: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 @keyframes logo {
     0% {
       transform: translate(-130%, 15px) scale(3) rotateX(30deg);
@@ -101,5 +115,14 @@
   }
   100% {
     transform: translateX(-110%);
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
