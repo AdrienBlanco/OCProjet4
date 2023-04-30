@@ -3,7 +3,7 @@ header { //header layout
     @include center;
     position: relative;
     height: 63px;
-    background-color: white;
+    background-color: $color-white;
     box-sizing: border-box;
     filter: drop-shadow($shadow-primary);
     @include desktop {

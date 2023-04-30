@@ -24,7 +24,7 @@
         display: flex;
         align-items: center;
         gap: 24px;
-        animation: title 900ms cubic-bezier(0.63,-0.36, 0.46, 1.49);
+        animation: title 900ms $stretch;
         h1 {
             font-family: 'Shrikhand', sans-serif;
             @include font (400, 28px);
@@ -46,18 +46,18 @@
         width: 40px;
         height: 3px;
         background-color: $color-tertiary;
-        animation: underline 900ms cubic-bezier(0.63,-0.36, 0.46, 1.49) 2700ms;
+        animation: underline 900ms $stretch 2700ms;
         transform-origin: left;
     }
 
     &__container &:nth-child(1) { //"entrées" animation
-        animation: menus 2700ms cubic-bezier(0.63,-0.36, 0.46, 1.49);
+        animation: menus 2700ms $stretch;
     }
     &__container &:nth-child(2) { //"plats" animation
-        animation: menus 1800ms cubic-bezier(0.63,-0.36, 0.46, 1.49) 900ms;
+        animation: menus 1800ms $stretch 900ms;
     }
     &__container &:nth-child(3) { //"désserts" animation
-        animation: menus 900ms cubic-bezier(0.63,-0.36, 0.46, 1.49) 1800ms;
+        animation: menus 900ms $stretch 1800ms;
     }
     &__container { //animation used to hide the menu parts
         animation: container 2700ms linear;

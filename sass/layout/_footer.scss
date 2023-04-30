@@ -1,6 +1,6 @@
 footer { //footer layout
     background-color: $color-dark;
-    color: white;
+    color: $color-white;
     padding: 22px 25px;
     @include direction;
     gap: 15px;
@@ -12,7 +12,7 @@ footer { //footer layout
         gap: 70px;
     }
     a {
-        color: white;
+        color: $color-white;
     }
     ul {
         @include direction;

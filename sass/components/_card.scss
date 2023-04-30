@@ -1,6 +1,6 @@
 .card { //card base component
     position: relative;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 20px;
     overflow: hidden;
     filter: drop-shadow($shadow-card);
@@ -61,8 +61,8 @@
         @include center;
         margin-right: -59px;
         background-color: $color-tertiary;
-        color: white;
-        transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: $color-white;
+        transition: all 500ms $fastout-slowin;
         i {
             font-size: 20px;
         }
