@@ -1,7 +1,7 @@
-.btn {
+.btn { //button base component
     display: flex;
     @include center;
-    &--pink {
+    &--pink { //pink gradient buttons
         background: linear-gradient($color-gradient);
         color: white;
         text-align: center;
@@ -10,11 +10,11 @@
         min-width: 150px;
         filter: drop-shadow($shadow-btn-origin);
         transition: filter 400ms ease-in-out 100ms;
-        &:hover {
+        &:hover { //animation trigger
             filter: drop-shadow($shadow-btn-modifier) brightness(1.10) saturate(0.85);
         }
     }
-    &--margin {
+    &--margin { //menu pages, pink buttons placement
         margin-top: 25px;
         padding-bottom: 40px;
     }

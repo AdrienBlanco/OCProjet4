@@ -1,4 +1,4 @@
-* {
+* { //browsers auto-margin deletion
     margin: 0;
 }
 
@@ -15,6 +15,6 @@ h2 {
     margin: 25px 0;
 }
 
-.flex {
+.flex { //used to flex an element
     display: flex;
 }

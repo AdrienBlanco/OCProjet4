@@ -1,4 +1,4 @@
-.card {
+.card { //card base component
     position: relative;
     background-color: white;
     border-radius: 20px;
@@ -10,7 +10,7 @@
         height: 174px;
         border-radius: 20px 20px 0 0;
     }
-    &__new {
+    &__new { //green new button
         position: absolute;
         top: 15px;
         right: 15px;
@@ -21,7 +21,7 @@
         border-radius: 2px;
         box-shadow: $shadow-primary;
     }
-    &__content {
+    &__content { //index page, cards content layout
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,7 +31,7 @@
             gap: 5px;
         }
     }
-    &__second-line {
+    &__second-line { //menu pages, cards second line of text
         display: flex;
         justify-content: space-between;
         p {
@@ -46,7 +46,7 @@
             padding-left: 5px;
         }
     }
-    &--layout {
+    &--layout { //menu pages, cards layout
         height: 69px;
         width: 100%;
         @include direction;
@@ -55,7 +55,7 @@
         gap: 5px;
         overflow: hidden;
     }
-    &__check {
+    &__check { //menu pages, cards animated check marks
         width: 59px;
         display: flex;
         @include center;
@@ -67,7 +67,7 @@
             font-size: 20px;
         }
     }
-    &:hover &__check {
+    &:hover &__check { //check mark trigger
         margin-right: 0;
     }
 }
