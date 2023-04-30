@@ -274,6 +274,7 @@ footer h3 {
   position: absolute;
   opacity: 0;
   background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
