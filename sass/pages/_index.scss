@@ -77,7 +77,7 @@
                 left: 34px;
                 overflow: hidden;
             }
-            &:nth-child(3) i { //third icon color
+            &:hover i { //icon color trigger
                 color: $color-primary;
             }
         }
