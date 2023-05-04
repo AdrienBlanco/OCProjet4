@@ -1,5 +1,6 @@
 # OHMYFOOD
 Projet 4 - Formation Intégrateur Web - OpenClassrooms
+Améliorez l'interface d'un site mobile avec des animations CSS
 ***
 ### Mobile devices (First)
 less than 768px
